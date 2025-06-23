@@ -4,7 +4,7 @@ AlgoArena is a full-stack LeetCode-style coding challenge platform that lets use
 
 Built with:
 
-- ⚛️ React (Frontend)
+- ⚛️ React + Vite (Frontend)
 - 🟩 Node.js + Express (Backend)
 - 🛢️ MongoDB or PostgreSQL (Database)
 - 🐳 Docker (for secure code execution)
