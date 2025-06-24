@@ -6,7 +6,7 @@ Built with:
 
 - ⚛️ React + Vite (Frontend)
 - 🟩 Node.js + Express (Backend)
-- 🛢️ MongoDB or PostgreSQL (Database)
+- 🛢️ PostgreSQL through Prisma (Database)
 - 🐳 Docker (for secure code execution)
 
 ---
