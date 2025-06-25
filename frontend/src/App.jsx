@@ -1,30 +1,28 @@
-import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import React from "react";
 import "./App.css";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
+import NotFoundPage from "./NotFoundPage";
+
+function Home() {
+  return (
+    <div>
+      <h1>Welcome to AlgoArena!</h1>
+    </div>
+  );
+}
+
+const router = createBrowserRouter([
+  { path: "/", element: <Navigate to="/home" replace /> },
+  { path: "/home", element: <Home /> },
+  { path: "*", element: <NotFoundPage /> },
+]);
 
 function App() {
-  const [backendData, setBackendData] = useState([{}]);
-
-  useEffect(() => {
-    fetch("/api").then((response) =>
-      response.json().then((data) => {
-        setBackendData(data);
-      })
-    );
-  }, []);
-
-  return (
-    <>
-      <div>
-        {typeof backendData.users === "undefined" ? (
-          <p>Loading...</p>
-        ) : (
-          backendData.users.map((user, i) => <p key={i}>{user}</p>)
-        )}
-      </div>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
