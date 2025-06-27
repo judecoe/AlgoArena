@@ -6,17 +6,12 @@ import {
   Navigate,
 } from "react-router-dom";
 import NotFoundPage from "./NotFoundPage";
+import { Dashboard } from "./components";
 
 function Home() {
   return (
     <div>
-      <div className="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white">
-        <div>
-          <div className="text-xl font-medium text-black dark:text-white">
-            AlgoArena
-          </div>
-        </div>
-      </div>
+      <Dashboard />
     </div>
   );
 }
@@ -29,6 +24,6 @@ const router = createBrowserRouter([
 
 const App: React.FC = () => {
   return <RouterProvider router={router} />;
-}
+};
 
 export default App;
