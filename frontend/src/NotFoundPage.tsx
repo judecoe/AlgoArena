@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button } from "./components";
-import { Panel } from "./components";
-import { Dashboard } from "./components";
+import { Button, Panel, Dashboard } from "./components";
 
 const NotFoundPage = () => {
   return (

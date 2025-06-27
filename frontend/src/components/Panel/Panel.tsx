@@ -1,4 +1,10 @@
-const Panel = ({
+const Panel: React.FC<{
+  title?: string;
+  children: React.ReactNode;
+  className?: string;
+  headerClassName?: string;
+  bodyClassName?: string;
+}> = ({
   title,
   children,
   className = "",
