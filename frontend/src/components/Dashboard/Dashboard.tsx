@@ -56,7 +56,7 @@ const Dashboard: React.FC<DashboardProps> = () => {
               </div>
 
               <a
-                href="/signin"
+                href="/login"
                 className="relative bg-black hover:bg-gray-900 text-white visited:text-white px-8 py-2.5 rounded-full font-medium overflow-hidden group transition-all duration-500 ease-out transform hover:scale-110 active:scale-95 inline-block border border-gray-700"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-out"></div>

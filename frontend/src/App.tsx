@@ -6,7 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import NotFoundPage from "./NotFoundPage";
-import { Dashboard } from "./components";
+import { Dashboard, Login } from "./components";
 
 function Home() {
   return (
@@ -19,6 +19,7 @@ function Home() {
 const router = createBrowserRouter([
   { path: "/", element: <Navigate to="/home" replace /> },
   { path: "/home", element: <Home /> },
+  { path: "/login", element: <Login /> },
   { path: "*", element: <NotFoundPage /> },
 ]);
 
